@@ -10,7 +10,7 @@ vector<int> z_algorithm(string s){
 	vector<int> z(n, 0);
 	z[0] = n;
 	int L = 0, R = 0;
-    int count = 0;
+	int count = 0;
 	for(int i = 1; i < n; i ++){
 		if(i <= R){
 			z[i] = min(R - i + 1, z[i - L]);
